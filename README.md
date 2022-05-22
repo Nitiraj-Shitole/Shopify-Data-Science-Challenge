@@ -10,20 +10,21 @@ What is its value?
 shopifydata <- read.csv("2019 Winter Data Science Intern Challenge Data Set - Sheet1.csv")
 head(shopifydata) 
 
-order_id	shop_id	user_id	order_amount	total_items	payment_method	created_at
-1	53	746	224	2	cash	2017-03-13 12:36:56
-2	92	925	90	1	cash	2017-03-03 17:38:52
-3	44	861	144	1	cash	2017-03-14 4:23:56
-4	18	935	156	1	credit_card	2017-03-26 12:43:37
-5	18	883	156	1	credit_card	2017-03-01 4:35:11
-6	58	882	138	1	credit_card	2017-03-14 15:25:01
-7	87	915	149	1	cash	2017-03-01 21:37:57
-8	22	761	292	2	cash	2017-03-08 2:05:38
-9	64	914	266	2	debit	2017-03-17 20:56:50
-10	52	788	146	1	credit_card	2017-03-30 21:08:26
-11	66	848	322	2	credit_card	2017-03-26 23:36:40
-12	40	983	322	2	debit	2017-03-12 17:58:30
-13	54	799	266	2	credit_card	2017-03-16 14:15:34
+|order_id|shop_id|user_id|order_amount|total_items|payment_method|created_at|
+|--------|-------|-------|------------|-----------|--------------|----------|
+|1|53|746|224|2|cash|2017-03-13 12:36:56|
+|2	|92|	925|	90|	1|	cash|	2017-03-03 17:38:52|
+|3	|44	|861	|144	|1	|cash	|2017-03-14 4:23:56|
+|4	18	935	156	1	credit_card	2017-03-26 12:43:37
+|5	18	883	156	1	credit_card	2017-03-01 4:35:11
+|6	58	882	138	1	credit_card	2017-03-14 15:25:01
+|7	87	915	149	1	cash	2017-03-01 21:37:57
+|8	22	761	292	2	cash	2017-03-08 2:05:38
+|9	64	914	266	2	debit	2017-03-17 20:56:50
+|10	52	788	146	1	credit_card	2017-03-30 21:08:26
+|11	|66	|848	|322	|2	|credit_card	|2017-03-26 23:36:40
+|12	|40	|983	|322	|2	|debit	|2017-03-12 17:58:30|
+|13|	54|	799|	266|	2|	credit_card|	2017-03-16 14:15:34|
 
 
 glimpse(shopifydata)
