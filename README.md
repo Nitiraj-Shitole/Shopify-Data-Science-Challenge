@@ -15,13 +15,13 @@ head(shopifydata)
 |1|53|746|224|2|cash|2017-03-13 12:36:56|
 |2	|92|	925|	90|	1|	cash|	2017-03-03 17:38:52|
 |3	|44	|861	|144	|1	|cash	|2017-03-14 4:23:56|
-|4	18	935	156	1	credit_card	2017-03-26 12:43:37
-|5	18	883	156	1	credit_card	2017-03-01 4:35:11
-|6	58	882	138	1	credit_card	2017-03-14 15:25:01
-|7	87	915	149	1	cash	2017-03-01 21:37:57
-|8	22	761	292	2	cash	2017-03-08 2:05:38
-|9	64	914	266	2	debit	2017-03-17 20:56:50
-|10	52	788	146	1	credit_card	2017-03-30 21:08:26
+|4	|18	|935	|156	|1	|credit_card	|2017-03-26 12:43:37
+|5	|18	|883	|156	|1	|credit_card	|2017-03-01 4:35:11
+|6	|58	|882	|138	|1	|credit_card	|2017-03-14 15:25:01
+|7	|87	|915	|149	|1	|cash	|2017-03-01 21:37:57
+|8	|22	|761	|292	|2	|cash	|2017-03-08 2:05:38
+|9	|64	|914	|266	|2	|debit	|2017-03-17 20:56:50
+|10	|52	|788	|146	|1	|credit_card	|2017-03-30 21:08:26
 |11	|66	|848	|322	|2	|credit_card	|2017-03-26 23:36:40
 |12	|40	|983	|322	|2	|debit	|2017-03-12 17:58:30|
 |13|	54|	799|	266|	2|	credit_card|	2017-03-16 14:15:34|
@@ -31,13 +31,13 @@ glimpse(shopifydata)
 
 Rows: 5,000
 Columns: 7
-$ order_id       <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, …
-$ shop_id        <int> 53, 92, 44, 18, 18, 58, 87, 22, 64, 52, 66, 40, 54, 100…
-$ user_id        <int> 746, 925, 861, 935, 883, 882, 915, 761, 914, 788, 848, …
-$ order_amount   <int> 224, 90, 144, 156, 156, 138, 149, 292, 266, 146, 322, 3…
-$ total_items    <int> 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 1, 3, 2000, 1, 1…
-$ payment_method <chr> "cash", "cash", "cash", "credit_card", "credit_card", "…
-$ created_at     <chr> "2017-03-13 12:36:56", "2017-03-03 17:38:52", "2017-03-…
+|$ order_id|       <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, …|
+|$ shop_id |      <int> 53, 92, 44, 18, 18, 58, 87, 22, 64, 52, 66, 40, 54, 100…|
+|$ user_id  |      <int> 746, 925, 861, 935, 883, 882, 915, 761, 914, 788, 848, …|
+|$ order_amount |  <int> 224, 90, 144, 156, 156, 138, 149, 292, 266, 146, 322, 3…|
+|$ total_items  |  <int> 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 1, 3, 2000, 1, 1…|
+|$ payment_method| <chr> "cash", "cash", "cash", "credit_card", "credit_card", "…|
+|$ created_at |    <chr> "2017-03-13 12:36:56", "2017-03-03 17:38:52", "2017-03-…|
   
 The data type of order_id, shop_id and user_id was integer, therefore we need to change them to character type.
 
@@ -49,13 +49,13 @@ glimpse(shopifydata)
                        
 Rows: 5,000
 Columns: 7
-$ order_id       <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"…
-$ shop_id        <chr> "53", "92", "44", "18", "18", "58", "87", "22", "64", "…
-$ user_id        <chr> "746", "925", "861", "935", "883", "882", "915", "761",…
-$ order_amount   <int> 224, 90, 144, 156, 156, 138, 149, 292, 266, 146, 322, 3…
-$ total_items    <int> 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 1, 3, 2000, 1, 1…
-$ payment_method <chr> "cash", "cash", "cash", "credit_card", "credit_card", "…
-$ created_at     <chr> "2017-03-13 12:36:56", "2017-03-03 17:38:52", "2017-03-…
+|$ order_id |      <chr> "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"…|
+|$ shop_id   |     <chr> "53", "92", "44", "18", "18", "58", "87", "22", "64", "…|
+|$ user_id   |     <chr> "746", "925", "861", "935", "883", "882", "915", "761",…|
+|$ order_amount|   <int> 224, 90, 144, 156, 156, 138, 149, 292, 266, 146, 322, 3…|
+|$ total_items |   <int> 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 1, 3, 2000, 1, 1…|
+|$ payment_method| <chr> "cash", "cash", "cash", "credit_card", "credit_card", "…|
+|$ created_at   |  <chr> "2017-03-13 12:36:56", "2017-03-03 17:38:52", "2017-03-…|
   
 # Checking any missing value.
 sum(is.na(data))
@@ -63,8 +63,10 @@ sum(is.na(data))
 No missing values were found in dataset.
 
 summary(data$order_amount)
-Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-90     163     284    3145     390  704000
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+|--------|-------|-------|------------|-----------|
+|90     |163     |284    |3145     |390  |704000|
+  
 Summary statistics of the order amount, showing the mean, minimum, maximum and interquartile values
 
 mean(data$order_amount)
@@ -83,18 +85,19 @@ data_aov <- data %>%
 data_aov %>%
         arrange(aov_per_shop)
  A tibble: 100 x 2
-    shop_id aov_per_shop
-    <chr>          <dbl>
-1 92                90
-2 2                 94
-3 32               101
-4 100              111
-5 53               112
-6 7                112
-7 93               114
-8 14               116
-9 48               117
-10 56               117
+ |   |shop_id| aov_per_shop|
+ |  | <chr> |         <dbl>|
+ |---|------------|-----------|
+|1 |92  |              90|
+|2 |2|                 94|
+|3 |32 |              101|
+|4 |100 |             111|
+|5 |53   |            112|
+|6 |7    |            112|
+|7 |93   |            114|
+|8 |14   |            116|
+|9 |48   |            117|
+|10 |56  |             117|
  … with 90 more rows
 
 
